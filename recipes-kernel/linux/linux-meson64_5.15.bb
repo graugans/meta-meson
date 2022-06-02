@@ -14,6 +14,8 @@ SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git;protoc
            file://defconfig \
            "
 
+SRC_URI:append:amediatech-x96-max-plus = "file://0001-Add-preliminary-support-for-Amediatech-Technology-Co.patch"
+
 KERNEL_VERSION_SANITY_SKIP="1"
 
 KERNEL_CLASSES = "kernel-uimage-meson"
